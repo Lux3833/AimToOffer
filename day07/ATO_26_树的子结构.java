@@ -24,7 +24,10 @@
  * 输入：A = [3,4,5,1,2], B = [4,1]
  * 输出：true
  */
-public class ATO_树的子结构 {
+public class ATO_26_树的子结构 {
+    public static void main(String[] args) {
+
+    }
 }
 class Solution26{
     // isSubStructure(A,B)函数
