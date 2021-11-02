@@ -16,6 +16,18 @@ import java.util.Stack;
  * minStack.top();      --> 返回 0.
  * minStack.min();   --> 返回 -2.
  */
+// 函数设计：
+// push(x) 函数： 重点为保持栈 BB 的元素是 非严格降序 的。
+//
+// 将 x 压入栈 A （即 A.add(x) ）；
+// 若 ① 栈 B 为空 或 ② x 小于等于 栈 B 的栈顶元素，则将 x 压入栈 B （即 B.add(x) ）。
+// pop() 函数： 重点为保持栈 A,B 的 元素一致性 。
+//
+// 执行栈 A 出栈（即 A.pop() ），将出栈元素记为 y ；
+// 若 y 等于栈 B 的栈顶元素，则执行栈 B 出栈（即 B.pop() ）。
+// top() 函数： 直接返回栈 A 的栈顶元素即可，即返回 A.peek() 。
+// min() 函数： 直接返回栈 B 的栈顶元素即可，即返回 B.peek() 。
+
 public class ATO_30_包含min函数的栈 {
     public static void main(String[] args) {
 

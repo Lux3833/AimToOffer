@@ -10,6 +10,14 @@ import java.util.Stack;
  * 输入：head = [1,3,2]
  * 输出：[2,3,1]
  */
+
+// 算法流程：
+// 入栈： 遍历链表，将各节点值 push 入栈。（Python 使用 append() 方法，Java借助 LinkedList 的addLast()方法）。
+// 出栈： 将各节点值 pop 出栈，存储于数组并返回。（Python 直接返回 stack 的倒序列表，Java 新建一个数组，通过 popLast() 方法将各元素存入数组，实现倒序输出）。
+// 复杂度分析：
+// 时间复杂度 O(N)： 入栈和出栈共使用 O(N) 时间。
+// 空间复杂度 O(N)： 辅助栈 stack 和数组 res 共使用 O(N) 的额外空间。
+
 public class ATO_06_从尾到头打印链表 {
     public static void main(String[] args) {
 

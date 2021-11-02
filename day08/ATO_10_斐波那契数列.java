@@ -22,7 +22,7 @@ public class ATO_10_斐波那契数列 {
 
     }
 }
-//  以斐波那契数列性质 f(n + 1) = f(n) + f(n - 1)f(n+1)=f(n)+f(n−1) 为转移方程。进行动态规划
+//  以斐波那契数列性质 f(n + 1) = f(n) + f(n - 1) 为转移方程。进行动态规划
 class Solution10{
     public int fib(int n){
         int a = 0, b = 1, sum;
